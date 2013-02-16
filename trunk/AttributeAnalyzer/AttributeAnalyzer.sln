@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttributeAnalyzer", "AttributeAnalyzer\AttributeAnalyzer.csproj", "{8ABFB09D-53B7-4258-BC7A-46A7F51E2B01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttributeAnalyzer.UnitTests", "AttributeAnalyzer.UnitTests\AttributeAnalyzer.UnitTests.csproj", "{777B940D-D07B-4ADE-827B-5A26C184D4F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.Framework", "UnitTests.Framework\UnitTests.Framework.csproj", "{91AD5FE8-0ADF-455A-8A4F-CFAD46A05570}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ABFB09D-53B7-4258-BC7A-46A7F51E2B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABFB09D-53B7-4258-BC7A-46A7F51E2B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABFB09D-53B7-4258-BC7A-46A7F51E2B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABFB09D-53B7-4258-BC7A-46A7F51E2B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{777B940D-D07B-4ADE-827B-5A26C184D4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{777B940D-D07B-4ADE-827B-5A26C184D4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{777B940D-D07B-4ADE-827B-5A26C184D4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{777B940D-D07B-4ADE-827B-5A26C184D4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91AD5FE8-0ADF-455A-8A4F-CFAD46A05570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91AD5FE8-0ADF-455A-8A4F-CFAD46A05570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91AD5FE8-0ADF-455A-8A4F-CFAD46A05570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91AD5FE8-0ADF-455A-8A4F-CFAD46A05570}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.36" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">e:\workspace\visual studio 2010\attributeanalyzer\trunk\attributeanalyzer\thirdparty\fxcop\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/AttributeAnalyzer/bin/Debug/AttributeAnalyzer.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.36">
+  <Namespaces>
+   <Namespace Name="AttributeAnalyzer">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2011-12-30 22:52:52Z">
+      <Issue>
+       <Item>AttributeAnalyzer</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="$(ProjectDir)/AttributeAnalyzer/bin/Debug/AttributeAnalyzer.dll">
+    <Modules>
+     <Module Name="attributeanalyzer.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2011-12-30 22:52:52Z">
+        <Issue Name="NoStrongName">
+         <Item>'AttributeAnalyzer.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017" Created="2011-12-30 22:52:52Z">
+        <Issue Name="AttributeTrue" Level="Error">
+         <Item>'AttributeAnalyzer.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="AttributeAnalyzer">
+        <Types>
+         <Type Name="AttributeAnalyzer">
+          <Messages>
+           <Message TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724" Created="2011-12-30 22:52:52Z">
+            <Issue>
+             <Item>'AttributeAnalyzer'</Item>
+             <Item>AttributeAnalyzer</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#FindClassAttribute`1()">
+            <Messages>
+             <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Created="2011-12-30 22:52:52Z">
+              <Issue>
+               <Item>'AttributeAnalyzer.FindClassAttribute&lt;TAttribute&gt;()'</Item>
+               <Item>'TAttribute'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FindMethodAttributes`1()">
+            <Messages>
+             <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Created="2011-12-30 22:52:52Z">
+              <Issue>
+               <Item>'AttributeAnalyzer.FindMethodAttributes&lt;TAttribute&gt;()'</Item>
+               <Item>'TAttribute'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FindPropertyAttributes`1()">
+            <Messages>
+             <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Created="2011-12-30 22:52:52Z">
+              <Issue>
+               <Item>'AttributeAnalyzer.FindPropertyAttributes&lt;TAttribute&gt;()'</Item>
+               <Item>'TAttribute'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IsDefined`1()">
+            <Messages>
+             <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Created="2011-12-30 22:52:52Z">
+              <Issue>
+               <Item>'AttributeAnalyzer.IsDefined&lt;TAttribute&gt;()'</Item>
+               <Item>'TAttribute'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="IAmAttributeAnalyser">
+          <Messages>
+           <Message Id="Analyser" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-12-30 22:52:52Z">
+            <Issue Name="Type">
+             <Item>Analyser</Item>
+             <Item>'IAmAttributeAnalyser'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#FindClassAttribute`1()">
+            <Messages>
+             <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Created="2011-12-30 22:52:52Z">
+              <Issue>
+               <Item>'IAmAttributeAnalyser.FindClassAttribute&lt;TAttribute&gt;()'</Item>
+               <Item>'TAttribute'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FindMethodAttributes`1()">
+            <Messages>
+             <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Created="2011-12-30 22:52:52Z">
+              <Issue>
+               <Item>'IAmAttributeAnalyser.FindMethodAttributes&lt;TAttribute&gt;()'</Item>
+               <Item>'TAttribute'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FindPropertyAttributes`1()">
+            <Messages>
+             <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Created="2011-12-30 22:52:52Z">
+              <Issue>
+               <Item>'IAmAttributeAnalyser.FindPropertyAttributes&lt;TAttribute&gt;()'</Item>
+               <Item>'TAttribute'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IsDefined`1()">
+            <Messages>
+             <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Created="2011-12-30 22:52:52Z">
+              <Issue>
+               <Item>'IAmAttributeAnalyser.IsDefined&lt;TAttribute&gt;()'</Item>
+               <Item>'TAttribute'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="IAmAttributeDefinitionChecker">
+          <Members>
+           <Member Name="#In`1(!!0)">
+            <Messages>
+             <Message Id="Analyse" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-12-30 22:52:52Z" FixCategory="NonBreaking">
+              <Issue Name="MethodTypeParameter">
+               <Item>'IAmAttributeDefinitionChecker.In&lt;TClassToAnalyse&gt;(TClassToAnalyse)'</Item>
+               <Item>Analyse</Item>
+               <Item>'TClassToAnalyse'</Item>
+              </Issue>
+             </Message>
+             <Message Id="In" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Created="2011-12-30 22:52:52Z">
+              <Issue Name="Member">
+               <Item>'IAmAttributeDefinitionChecker.In&lt;TClassToAnalyse&gt;(TClassToAnalyse)'</Item>
+               <Item>In</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="IAmAttributeFinder`1">
+          <Members>
+           <Member Name="#In`1(!!0)">
+            <Messages>
+             <Message Id="Analyse" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-12-30 22:52:52Z" FixCategory="NonBreaking">
+              <Issue Name="MethodTypeParameter">
+               <Item>'IAmAttributeFinder&lt;TAttribute&gt;.In&lt;TClassToAnalyse&gt;(TClassToAnalyse)'</Item>
+               <Item>Analyse</Item>
+               <Item>'TClassToAnalyse'</Item>
+              </Issue>
+             </Message>
+             <Message Id="In" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Created="2011-12-30 22:52:52Z">
+              <Issue Name="Member">
+               <Item>'IAmAttributeFinder&lt;TAttribute&gt;.In&lt;TClassToAnalyse&gt;(TClassToAnalyse)'</Item>
+               <Item>In</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Rules>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+    <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   </Rule>
+   <Rule TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004">
+    <Resolution Name="Default">Consider a design where {0} doesn't require explicit type parameter {1} in any call to it.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="MethodTypeParameter">On method {0}, correct the spelling of '{1}' in generic type parameter name {2}.</Resolution>
+    <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716">
+    <Resolution Name="Member">Rename virtual/interface member {0} so that it no longer conflicts with the reserved language keyword '{1}'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017">
+    <Resolution Name="AttributeTrue">Consider changing the ComVisible attribute on {0} to false, and opting in at the type level.</Resolution>
+   </Rule>
+   <Rule TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724">
+    <Resolution Name="Default">The type name {0} conflicts in whole or in part with the namespace name '{1}'. Change either name to eliminate the conflict.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>
